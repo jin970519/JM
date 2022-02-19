@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="uft-8">
+    <meta http-equiv="x-ua-compatibe">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <title>프로젝트</title>
+</head>
+<link href="css/css sub4.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-3.1.1.min.js"></script>
+<script>
+    $(function () {
+
+        $('.tabSet').each(function () {
+            var anchor = $(this).find('.tabs a'); //this=전체 셋트
+            var anchor_on = $(this).find('.tabs a.on');
+            var href_on = anchor_on.attr('href');
+            var panel_all = $(this).find('.panel');
+
+            $(href_on).show(); //처음부터 나와 있을 값
+
+            anchor.each(function () {   // .tabs a 들
+                var href = $(this).attr('href');
+
+                $(this).click(function () { //클릭한 .tabs a
+                    panel_all.hide();
+                    anchor.removeClass('on');
+                    $(this).addClass('on');
+                    $(href).show();
+
+                });
+            });
+        });
+    });
+    
+    $('#toggle').click(function(){
+                if($(this).hasClass('on')){
+                    $('.head').animate({
+                        height:0
+                    },500)
+                    $(this).removeClass('on');
+                }else{
+                    $('.head').animate({
+                        height:60
+                    },500);
+                    $(this).addClass('on');
+                }
+                
+            })
+        });
+
+</script>
+
+<body>
+    <header>
+        <div class="inner">
+            <div class="logo"><a href="index.html"><img src="images/header.jpg" alt="logo"></a></div>
+            <div id="toggle">
+                <div class="toggle_in"></div>
+                <div class="toggle_in"></div>
+                <div class="toggle_in"></div>
+          </div>
+            <nav class="head">
+                <ul>
+                    <li class="headc"> <a href="sub.html">회사소개</a></li>
+                    <li class="headc">다운로드
+                        <ul class="headd">
+                            <li><a href="https://play.google.com/store/games?hl=ko&utm_source=apac_med&utm_medium=offdis&utm_content=Oct1221&utm_campaign=Evergreen&pcampaignid=MKT-EDR-apac-kr-1003227-med-offdis-py-Evergreen-Oct1221-Sitelink-NBS:GENGAM:SB:NAVER:0:EVG21Q2%7CDISP_pid_297152116-cid_142312048-aid_490253550&dclid=CJ-vssqSnPUCFQtdvQodUDEAeQ"
+                                    target="blank">안드로이드 전용</a></li>
+                            <li><a href="https://www.apple.com/kr/app-store/" target="blank" target="blank">ISO전용</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="headc"><a href="sub2.html">이벤트</a></li>
+                    <li class="headc"><a href="sub3.html">고객센터</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="sec1">
+        <div class="inner">
+            <h1>이벤트</h1>
+            <div class="left"><img src="images/win.png" alt=""></div>
+            <div class="right"><img src="images/subman.png" alt="subman"></div>
+        </div>
+    </section>
+    <section class="sec2">
+        <div class="inner">
+
+        </div>
+    </section>
+
+    <section class="box1">
+        <div class="tabSet">
+            <div class="inner">
+                <ul class="tabs top1">
+                    <li><a href="#panel1-2" class="on">NEWS</a></li>
+                    <li><a href="#panel1-1">EVENT</a></li>
+                </ul>
+                <div class="panels">
+                    <div class="panel" id="panel1-1">
+                        <div class="event">
+                            <a href="#"><img src="images/이벤트사진.png" alt="top2" width="250px"></a>
+                            <a href="#"><img src="images/이벤트사진3.png" alt="top2" width="250px"></a>
+                            <a href="#"><img src="images/이벤트사진2.png" alt="top2" width="250px"></a>
+                            <a href="#"><img src="images/이벤트사진4.png" alt="top2" width="250px"></a>                        
+                        </div>
+                    </div>
+                    <div class="panel" id="panel1-2">
+                       <table>
+                           <tr>
+                               <td>번호</td>
+                               <td>제목</td>
+                               <td>작성일</td>
+                           </tr>
+                           <tr>
+                            <td>1</td>
+                            <td><a href="#">'전국의 메뉴판' 가맹점과 동반성장을 위해 가맹수수료 면제</a></td>
+                            <td>2021.12.15</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><a href="#">'전국의 메뉴판' 이용자 100만명 달성!!</a></td>
+                            <td>2021.12.13</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><a href="#">'전국의 메뉴판' 홍보대사로 장기용 선정</a></td>
+                            <td>2021.12.11</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><a href="#">'전국의 메뉴판' 코로나 자영업자를 위한 기부활동!</a></td>
+                            <td>2021.12.05</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td><a href="#">메뉴 플러스 혜택 변경 안내</a></td>
+                            <td>2021.12.04</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td><a href="#">'전국의 메뉴판' 자영업 지원사업구축</a></td>
+                            <td>2021.12.01</td>
+                        </tr>
+                        
+                       </table>
+                       <ul class="one">
+                        <li><
+                            </li>
+                        <li class="in">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+
+
+    <footer>
+        <div class="inner">
+            <nav class="foot">
+                <ul>
+                    <li><a href="sub.html">회사소개</a></li>
+                    <li><a href="sub2.html">이벤트</a></li>
+                    <li class="li1"><a href="sub3.html">고객센터</a></li>
+                    <li class="li2"><a href="https://www.facebook.com/" target="blank"><img src="images/facebook.png"
+                                alt="facebook"></a></li>
+                    <li><a href="https://www.instagram.com/" target="blank"><img src="images/instargram.png"
+                                alt="instargram"></a></li>
+                    <li><a href="https://www.youtube.com/" target="blank"><img src="images/youtube.png"
+                                alt="youtube"></a></li>
+                    <li><a href="https://accounts.kakao.com/login/kakaostory" target="blank"><img
+                                src="images/kakaostory.png" alt="kakaostory"></a></li>
+                    <hr>
+                </ul>
+            </nav>
+            <div class="foot1">
+                <p>(주)한국의 메뉴판</p>
+                <p>주소:부산시 수영구 광안로 231-12 ㅣ 사업자번호:132-84-58455 ㅣ 통신판매업:부산 수영구-0505 </p>
+                <p>TEL: 1588-1588 ㅣFAX : 050-4545-5585 ㅣ MAIL:MENUPAN@Naver.com
+                </p>
+            </div>
+            <nav class="icon">
+                <ul>
+                    <li class="icon1"><a
+                            href="https://play.google.com/store/games?hl=ko&utm_source=apac_med&utm_medium=offdis&utm_content=Oct1221&utm_campaign=Evergreen&pcampaignid=MKT-EDR-apac-kr-1003227-med-offdis-py-Evergreen-Oct1221-Sitelink-NBS:GENGAM:SB:NAVER:0:EVG21Q2%7CDISP_pid_297152116-cid_142312048-aid_490253550&dclid=CKf5mcKRnPUCFVgmlgodmPsMMw"
+                            target="blank"><img src="images/playstore.png" alt="playstore">Google play</a></li>
+                    <li class="icon2"><a href="https://www.apple.com/kr/app-store/" target="blank"><img
+                                src="images/appstore.png" alt="appstore"> App store</a></li>
+                </ul>
+            </nav>
+    </footer>
+    </div>
+    </div>
+    </div>
+</body>
+
+
+
+
+
+</html>

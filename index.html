@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+    <meta charset="uft-8">
+    <meta http-equiv="x-ua-compatibe" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:url" content="menupan.dothome.co.kr"><!--주소-->
+    <meta property="og:title" content="전국의 메뉴판"> <!--제목-->
+    <meta property="og:type" content="website"><!--정보-->
+    <meta property="og:image" content="img/main "><!--이미지-->
+    <meta property="og:description" content="여기는 사이트설명">
+
+    <title>프로젝트</title>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+        $(function(){
+
+            $('.tabSet').each(function(){
+                var anchor = $(this).find('.tabs a'); //this=전체 셋트
+                var anchor_on = $(this).find('.tabs a.on');
+                var href_on = anchor_on.attr('href');
+                var panel_all = $(this).find('.panel');
+
+                $(href_on).show(); //처음부터 나와 있을 값
+
+                anchor.each(function(){   // .tabs a 들
+                    var href = $(this).attr('href');
+
+                    $(this).click(function(){ //클릭한 .tabs a
+                        panel_all.hide();
+                        anchor.removeClass('on');
+                        $(this).addClass('on');-
+                        $(href).show();
+
+                    });
+                    });  
+            });
+
+            
+        });
+
+    </script>
+</head>
+    <link href="css/css.css" rel="stylesheet" type="text/css">
+    <link href="css/footer.css" rel="stylesheet" type="text/css">
+    <link href="css/header.css" rel="stylesheet" type="text/css">
+   <body>
+       <header>
+        <div class="inner">
+          <div class="logo"><a href="index.html"><img src="images/header.jpg" alt="logo"></a></div>
+          <div id="toggle">
+              <div class="toggle_in"></div>
+              <div class="toggle_in"></div>
+              <div class="toggle_in"></div>
+        </div>
+           <nav class="head">
+            <ul> 
+               <li class="headc"> <a href="sub.html">회사소개</a></li>
+               <li class="headc"><a>다운로드</a>
+                   <ul class="headd">
+                       <li><a href="https://play.google.com/store/games?hl=ko&utm_source=apac_med&utm_medium=offdis&utm_content=Oct1221&utm_campaign=Evergreen&pcampaignid=MKT-EDR-apac-kr-1003227-med-offdis-py-Evergreen-Oct1221-Sitelink-NBS:GENGAM:SB:NAVER:0:EVG21Q2%7CDISP_pid_297152116-cid_142312048-aid_490253550&dclid=CJ-vssqSnPUCFQtdvQodUDEAeQ" target="blank">안드로이드 전용</a></li>
+                       <li><a href="https://www.apple.com/kr/app-store/" target="blank" target="blank">ISO전용</a></li>
+                   </ul>
+               </li>
+               <li class="headc"><a href="sub2.html">이벤트</a></li>
+                    <li class="headc"><a href="sub3.html">고객센터</a>
+               </li>
+            </ul>
+           </nav>
+        </div>
+       </header>
+       <section class="box1">
+        <div class="inner">
+           <div class="jm">
+           <h1 class="h_1">당신의 맛있는
+               <br>한끼를 찾아 드리겠습니다.
+           </h1>
+           <p class="up">100만 이상 사용자 고객보유</p>
+           <div><a class="down" href="https://play.google.com/store/games?hl=ko&utm_source=apac_med&utm_medium=offdis&utm_content=Oct1221&utm_campaign=Evergreen&pcampaignid=MKT-EDR-apac-kr-1003227-med-offdis-py-Evergreen-Oct1221-Sitelink-NBS:GENGAM:SB:NAVER:0:EVG21Q2%7CDISP_pid_297152116-cid_142312048-aid_490253550&dclid=CJ-vssqSnPUCFQtdvQodUDEAeQ" target="blank">다운로드</a></div>
+        </div>
+           <div class="man"><img src="images/man.png" alt="man"></div>
+           </div>
+       </section>
+       <section class="box2">
+        <div class="inner">
+            <div class="sec1">
+              <div class="sec1_r"></div>
+            <div class="font">
+           <h2>맛집 찾기 어려우셨나요?<br>그럴땐 전국의 메뉴판이 있습니다.</h2>
+           <hr>
+           <p>맛집을 찾기 어려우시지 않으셨나요?<br> 저희 전국의 메뉴판은 
+            고객님들의 맛있는 한끼를 위해서 전국의 맛집을 찾아 고객님들께 
+            소개시켜 드리고 있습니다. 저희 전국의 메뉴판은 고객님들의 
+            만족을 위해 더욱 더 노력하여 고객님들께 만족시킬수 있는 
+            회사가 되겠다고 약속 드리겠습니다. </p></div>
+        </div>
+            
+        <div class="sec2">
+            <div class="sec2_l"></div>
+            <div class="font1">
+            <h2>당신의 소중한 한끼!!<br>전국의 메뉴판에서 찾아 드리겠습니다.</h2>
+            </h2><hr>
+            <p>저희 전국의 메뉴판은 고객님들께 더욱손쉽고 간편하게 맛집을  
+                찾을 수 있도록 노력합니다. <br> 저희 가족들이 외식할때 맛있는걸 먹었으면 
+                하는 마음 가짐으로 고객님들께 임하겠습니다. <br>
+                소중한 한끼를 원하신다면 저희 전국의 메뉴판 앱을 사용해보시길 바랍니다.  </p>
+            </div>
+               
+                </div>
+         </div>
+        
+       </section>
+       <section class="box3">
+        <div class="inner">
+            
+           <h1 class="h1">전국의 TOP<strong>3</strong><div class="king"><img src="images/Untitled-1.png" alt=""></div></h1>
+            <div class="tabSet">
+		
+            <div class="panels">
+                <div class="panel" id="panel1-1">
+                        <a href="https://dongwhite.com/tasty/bbs_detail.php?bbs_num=478&b_category=&id=&tb=board_tasty&pg=&links_number=" target="blank"><img src="images/top2.jpg" alt="top2"></a>
+                        <a href="https://dongwhite.com/tasty/bbs_detail.php?bbs_num=479&b_category=&id=&tb=board_tasty&pg=&links_number=" target="blank"><img src="images/top1.jpg" alt="top2"></a>
+                        <a href="https://dongwhite.com/tasty/bbs_detail.php?bbs_num=477&b_category=&id=&tb=board_tasty&pg=&links_number=" target="blank"><img src="images/top3.jpg" alt="top2"></a>
+                </div>
+                <div class="panel" id="panel1-2">
+                   <a href="https://www.menupan.com/restaurant/onepage.asp?acode=H601660" target="blank"> <img src="images/tt2.png" alt="이미지1 설명"></a>
+                    <a href="https://www.menupan.com/restaurant/onepage.asp?acode=H601516" target="blank"><img src="images/t1.png" alt="이미지1 설명">
+                        <a href="https://www.menupan.com/restaurant/onepage.asp?acode=H601514" target="blank"><img src="images/t3.png" alt="이미지1 설명"></a>
+                </div>
+                <div class="panel" id="panel1-3">
+                    <a href="https://dongwhite.com/tasty/bbs_detail.php?bbs_num=478&b_category=&id=&tb=board_tasty&pg=&links_number=" target="blank"><img src="images/top2.jpg" alt="top2"></a>
+                    <a href="https://dongwhite.com/tasty/bbs_detail.php?bbs_num=479&b_category=&id=&tb=board_tasty&pg=&links_number=" target="blank"><img src="images/top1.jpg" alt="top2"></a>
+                    <a href="https://dongwhite.com/tasty/bbs_detail.php?bbs_num=477&b_category=&id=&tb=board_tasty&pg=&links_number=" target="blank"><img src="images/top3.jpg" alt="top2"></a>
+                </div>
+                <div class="panel" id="panel1-4">
+                    <a href="https://www.menupan.com/restaurant/onepage.asp?acode=H601660" target="blank"> <img src="images/tt2.png" alt="이미지1 설명"></a>
+                    <a href="https://www.menupan.com/restaurant/onepage.asp?acode=H601516" target="blank"><img src="images/t1.png" alt="이미지1 설명">
+                        <a href="https://www.menupan.com/restaurant/onepage.asp?acode=H601514" target="blank"><img src="images/t3.png" alt="이미지1 설명"></a>
+                </div>
+                <div class="panel" id="panel1-5">
+                    <a href="https://dongwhite.com/tasty/bbs_detail.php?bbs_num=478&b_category=&id=&tb=board_tasty&pg=&links_number=" target="blank"><img src="images/top2.jpg" alt="top2"></a>
+                        <a href="https://dongwhite.com/tasty/bbs_detail.php?bbs_num=479&b_category=&id=&tb=board_tasty&pg=&links_number=" target="blank"><img src="images/top1.jpg" alt="top2"></a>
+                        <a href="https://dongwhite.com/tasty/bbs_detail.php?bbs_num=477&b_category=&id=&tb=board_tasty&pg=&links_number=" target="blank"><img src="images/top3.jpg" alt="top2"></a>
+                </div>
+                <div class="panel" id="panel1-6">
+                    <a href="https://www.menupan.com/restaurant/onepage.asp?acode=H601660" target="blank"> <img src="images/tt2.png" alt="이미지1 설명"></a>
+                    <a href="https://www.menupan.com/restaurant/onepage.asp?acode=H601516" target="blank"><img src="images/t1.png" alt="이미지1 설명">
+                        <a href="https://www.menupan.com/restaurant/onepage.asp?acode=H601514" target="blank"><img src="images/t3.png" alt="이미지1 설명"></a>
+                </div>
+                <div class="panel" id="panel1-7">
+                    <a href="https://dongwhite.com/tasty/bbs_detail.php?bbs_num=478&b_category=&id=&tb=board_tasty&pg=&links_number=" target="blank"><img src="images/top2.jpg" alt="top2"></a>
+                    <a href="https://dongwhite.com/tasty/bbs_detail.php?bbs_num=479&b_category=&id=&tb=board_tasty&pg=&links_number=" target="blank"><img src="images/top1.jpg" alt="top2"></a>
+                    <a href="https://dongwhite.com/tasty/bbs_detail.php?bbs_num=477&b_category=&id=&tb=board_tasty&pg=&links_number=" target="blank"><img src="images/top3.jpg" alt="top2"></a>
+                </div>
+    
+            </div>
+    
+            <ul class="tabs top1">
+                <li><a href="#panel1-1" class="on"><img src="images/busan.png" alt="부산">부산</a></li>
+                <li><a href="#panel1-2"><img src="images/ulsan.png">울산</a></li>
+                <li><a href="#panel1-3"><img src="images/daegoo.png">대구</a></li>
+                <li><a href="#panel1-4"><img src="images/dajun.png">대전</a></li>
+                <li><a href="#panel1-5"><img src="images/inchun.png">인천</a></li>
+                <li><a href="#panel1-6"><img src="images/gangjoo.png">광주</a></li>
+                <li><a href="#panel1-7"><img src="images/seoul.png">서울</a></li>
+            </ul>
+        <!-- /tabset -->
+            </div>
+        </div>
+        </section>    
+
+        <footer>
+            <div class="inner">
+            <nav class="foot">
+            <ul>
+                <li><a hxloref="sub.html">회사소개</a></li>
+                <li><a href="sub2.html">이벤트</a></li>
+                <li class="li1"><a href="sub3.html">고객센터</a></li><br>
+                <li class="li2"><a href="https://www.facebook.com/" target="blank"><img src="images/facebook.png" alt="facebook"></a></li>
+                <li><a href= "https://www.instagram.com/" target="blank"><img src="images/instargram.png" alt="instargram"></a></li>
+                <li><a href="https://www.youtube.com/" target="blank"><img src="images/youtube.png" alt="youtube"></a></li>
+                <li><a href="https://accounts.kakao.com/login/kakaostory" target="blank"><img src="images/kakaostory.png" alt="kakaostory"></a></li>
+             </ul>
+     </nav>
+     <hr>
+     <div class="foot1">
+         <p>(주)전국의 메뉴판</p>
+             <p>주소:부산시 수영구 광안로 231-12 ㅣ 사업자번호:132-84-58455 ㅣ 통신판매업:부산 수영구-0505 </p>
+             <p>TEL: 1588-1588 ㅣFAX : 050-4545-5585 ㅣ MAIL:MENUPAN@Naver.com
+         </p>
+     </div>
+         <nav class="icon">
+         <ul>
+             <li class="icon1"><a href="https://play.google.com/store/games?hl=ko&utm_source=apac_med&utm_medium=offdis&utm_content=Oct1221&utm_campaign=Evergreen&pcampaignid=MKT-EDR-apac-kr-1003227-med-offdis-py-Evergreen-Oct1221-Sitelink-NBS:GENGAM:SB:NAVER:0:EVG21Q2%7CDISP_pid_297152116-cid_142312048-aid_490253550&dclid=CKf5mcKRnPUCFVgmlgodmPsMMw" target="blank"><img src="images/playstore.png" alt="playstore">Google play</a></li>
+             <li class="icon2"><a href="https://www.apple.com/kr/app-store/" target="blank"><img src="images/appstore.png" alt="appstore"> App store</a></li>
+         </ul>
+     </nav>
+     </div>
+        </footer>
+       </body>
+   </body>
+      
+      
+      
+      
+      
+     </html>

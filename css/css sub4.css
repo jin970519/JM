@@ -1,0 +1,193 @@
+/**************공통*****************/
+*{padding:0; margin: 0 ;}
+.inner{width: 1300px; margin: 0 auto;}
+nav ul li{list-style: none;}
+a{color: initial; text-decoration: none;}
+.se h1{font-family:'Times New Roman', Times, serif ;}
+@import url('https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css');
+html{
+    font-family: 'NanumSquare', sans-serif;
+     }
+
+
+
+/****************header******************/
+.head{float: right; padding-top: 60px;}
+header{height: 150px;}
+.logo{padding-top: 45px; float: left;}
+header .inner::before, header .inner::after{clear: both; display: block; content: "";} 
+.head .headc{display: inline-block; width: 150px; text-align: center; position: relative; padding: 5px 0;}
+.headd{display: none; position: absolute; top:30px; left: 0%; z-index: 10;}
+.headd li a{display: block; padding: 4px 0px; color: white;}
+
+.head .headc:hover .headd{display: block; background-color: black; color: white; width: 150px;}
+.head .headc:hover{background-color: #ffb600; color: white;}
+/****************sec1*******************/
+.sec1{height: 300px; background-color: #ffcc1d; position: relative; background-image: url(../images/bgling.png);}
+.sec1 h1{text-align: center; padding-left: 550px; padding-top: 100px; position: absolute; color: white; font-size: 5em; text-shadow: 0 0 10px #bd8701}
+.left img{float: left; padding-top: 50px; width: 150px; padding-left: 50px;}
+.right{float: right; padding-top: 50px;}
+
+
+/********************sec2************************/
+.sec2{height: 150px; background-image: url(../images/월넷.jpg); background-size: 100% auto;}
+
+
+
+
+
+/*******************sec3************************/
+.tabs1 {margin: 100px auto; width: 80%;}
+.tabs1 li{text-align: center; list-style: none; display: inline-block ; cursor: pointer; width: 49%;}
+.tabs1 li a{font-size: 2em; text-align: center; border: 1px solid; width: 100%; color: #000; border-color: black; 
+    display: inline-block; list-style: none; }
+
+
+
+
+
+.top1 li:hover a{background-color: #ffb600; color:white;  cursor: pointer; }
+.top1 li a:hover{filter:invert(0%) }
+a.on{background-color: #ffb600; color:white;}
+
+.event a{display: inline-block; margin-left: 15px;}
+.tabSet {padding-bottom: 150px;}
+
+table{margin: 0 auto; border-collapse: collapse;;}
+tr:nth-child(1){background-color: #f8f8f8; text-align: center;}
+td:nth-child(1){width: 170px; text-align: center;}
+td:nth-child(2){width: 630px; padding-left: 20px;}
+td:nth-child(3){width: 215px;text-align: center; border-right: none;}
+td{height: 50px; border-right: 1px solid #eeeeee; border-bottom: 0.5px solid #eeeeee;}
+
+
+.one li{display: inline-block; padding:10px; }
+.one{text-align: center; margin-top: 50px; list-style: none;}
+.one li:nth-child(2){color: #ffb600;}
+.one li:hover{color: #ffb600; cursor: pointer;} 
+
+.panel{display: none;}
+
+
+/**********footer***********/
+footer{background-color: #f7f7f7; height: 400px;}
+.foot ul li{padding-right: 20px;}
+.foot1{padding-top: 50px; float: left;}
+.foot{padding-top: 70px;width: 1200px;}
+.foot ul .li1{border-right: 1px solid; padding-right: 30px;}
+.foot ul .li2{padding-left: 30px;}
+hr{margin-top: 30px; width: 1300px;}
+.icon{float: right; padding-top: 50px; display:}
+.icon1 {border: 1px solid; padding: 10px 20px 10px 20px; border-radius: 0.5em; }
+.icon2{border: 1px solid; padding: 10px 20px 10px 20px; border-radius: 0.5em; }
+.foot ul li{display: inline-block;}
+.icon ul .icon1 {margin-bottom: 10px; text-align: center; font-size: 1.5em;}
+.icon ul .icon2 {text-align: center; font-size: 1.5em;}
+.icon ul li img{padding-right: 10px;}
+
+footer::before footer::after{clear: both; content: ""; display: block;}
+footer{background-color: #f7f7f7; height: 280px;}
+.foot ul li{padding-right: 20px;}
+.foot ul li a{font-size: 0.9em;}
+.foot1{padding-top: 20px; float: left;}
+.foot{padding-top: 50px;width: 1200px;}
+.foot1 p{font-size: 0.5em; padding-top: 5px;}
+.icon ul li{display: inline-block;}
+.foot ul li {padding-bottom: 5px;}
+.foot ul .li1{border-right: 1px solid; padding-right: 30px;}
+.foot ul .li2{padding-left: 30px;}
+hr{margin-top: 30px; width: 1300px;}
+.icon{float: right; padding-top: 20px;}
+.icon1 {border: 1px solid; padding: 10px 20px 10px 20px; border-radius: 0.5em;}
+.icon2{border: 1px solid; padding: 10px 20px 10px 20px; border-radius: 0.5em;}
+.icon ul .icon1 {margin-bottom: 10px; text-align: center; font-size: 0.8em;}
+.icon ul .icon2 {text-align: center; font-size: 0.8em;}
+.icon ul li img{padding-right: 5px; width: 10px;}
+
+#panel1-1{margin-left: 100px;}
+
+#toggle{
+    display: none;
+}
+
+@media  (max-width: 700px){
+        .inner{
+            width: 100%;
+        }
+        #toggle{
+            width:20px;
+            height: 20px;
+            position: absolute;
+            top:30px;
+            left: 20px;
+            display: block;
+            cursor: pointer;
+        }
+        .toggle_in{
+            height: 2px;
+            background-color: black;
+            margin-bottom: 6px;
+        }
+        .logo{
+            position: absolute;
+            right:20px;
+            top:20px;
+            padding-top: 0;
+        }
+        .logo img{
+            width: 140px;
+        }
+        header {
+            height: 75px;
+        }
+        .head{
+            position: absolute;
+            top:75px;
+            left: 0;
+            width: 100%;
+            padding-top: 0;
+            height: 0;
+            overflow: hidden;
+    
+        }
+        .head .headc{
+            width:25%;
+            display: block;
+            float: left;
+            height: 50px;
+            line-height: 50px;
+            font-size: 13px;
+            border-radius: 0;
+            background-color: #f8f8f8;
+        }
+        .sec1 {height: 200px;}
+        .sec2 {height: 70px;}
+        .sec1 h1{font-size: 2em; padding-left: 200px; padding-top: 100px;;}
+        .left img{width: 20%;  padding-top:20px; padding-left: 5%;}
+        .right img{width: 50%; padding-top: 20px; float: none; padding-left: 40%;}
+        .tabs1{display: inline-block; font-size: 0.7em;}
+
+
+
+        .tabs {margin-top: 30px;}
+        .foot hr{margin-top: 20px; width: 425px; margin-left: 0px;}
+        .foot {padding-top: 30px; padding-left: 5%;}
+        .foot ul li a{font-size: 0.5em; padding-top: 0px;}
+        .foot ul li {padding-right: 20px;}
+        .foot ul .li2 {padding-left: 10px;}
+        .foot1 {padding-left: 5%; }
+        .foot1 p{font-size: 0.1em;}
+        .icon {float: left; padding-left: 5%;}
+        .icon1 {padding: 5px 10px 5px 10px;}
+        .icon2 {padding: 5px 10px 5px 10px;}
+        .icon ul .icon1 {font-size: 1px; border-radius: 5px;}
+        .icon ul .icon2 {font-size: 1px; border-radius: 5px;}
+        .top1 li {margin-right: 10px;}
+        .foot ul li a img{width: 70%;}
+      
+    
+}
+}
+
+}
+

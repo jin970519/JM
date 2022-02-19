@@ -1,0 +1,267 @@
+/**************공통*****************/
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Playfair+Display:wght@500&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css');
+html{
+    font-family: 'NanumSquare', sans-serif;
+     }
+
+*{padding:0; margin: 0 ;}
+.inner{width: 1300px; margin: 0 auto;}
+nav ul li{list-style: none; display: inline-block;}
+a{color: initial; text-decoration: none;}
+
+/****************header******************/
+.head{float: right; padding-top: 60px;}
+header{height: 150px;}
+.logo{padding-top: 45px; float: left;}
+header .inner::before, header .inner::after{clear: both; display: block; content: "";} 
+.head .headc{display: inline-block; width: 150px; text-align: center; position: relative; padding: 5px 0; font-weight: 700; border-radius: 10px;}
+.headd{display: none; position: absolute; top:30px; left: 0%; z-index: 10;}
+.headd li a{display: block; padding: 4px 0px; color: white;}
+
+.head .headc:hover .headd{display: block; background-color: black; color: white; width: 150px; border-radius: 10px;}
+.head .headc:hover{background-color: #ffcc1d; color: white;}
+/****************sec1*******************/
+.box1{background-image: url(../images/china.JPG); background-repeat: no-repeat; color: white; height: 700px; background-size: cover;}
+.jm{padding-top: 200px; font-size: 2.3em; float: left; width: 60%;}
+.man{float: right;padding-top: 100px; width: 40%;}
+.man img{width: 90%;}
+.box1::after, .box1::before{clear: both; content: ""; display: block;}
+h2{font-size: 2.5em;}
+.down{border-radius: 0.2em; width: 100px; text-align: center; font-size: 0.5em; padding: 10px; margin-top: 30px;  background-color: #ffb600; color: white; display: block;}
+.up{margin-top: 20px; font-size: 0.7em; font-weight:lighter;}
+.down:hover{color:#fff; cursor: pointer;}
+
+
+/***************sec2*******************/
+.box2{background-color: #ffcc1d;}
+.sec1 , .sec2{height: 400px; padding-bottom: 5px;}
+.sec1::after, .sec1::before{clear: both; content: ""; display: block;}
+.sec2::after, .sec2::before{clear: both; content: ""; display: block;}
+
+.sec1_r{float: right; width: 50%; height: 100%;
+    background-image: url(../images/food1.png); background-repeat: no-repeat; background-position:50px bottom; }
+    
+.font{float: left; padding-top: 150px; width: 50%; padding-left: 100px; box-sizing: border-box;}
+
+.sec2_l{float: left; width: 50%; height: 100%; background-image: url(../images/food3.png); background-repeat: no-repeat;
+background-position: 50px top;}
+
+.font1{float:right;  padding-top: 150px; width: 50%; padding-right: 100px; box-sizing: border-box;}
+
+.font h2, .font1 h2{font-size: 2em; font-weight: bold;}
+.box2 hr{ margin: 10px 0 ; border: 1px solid rgb(204, 167, 0);}
+.font p, .font1 p{font-size: 0.9em; line-height: 1.5;}
+
+/**************sec3*******************/
+.box3{height: 680px;}
+.top{margin-bottom: 70px;}
+.top1{margin-bottom: 250px; text-align: center;}
+.h1{margin-top: 155px; text-align: center; margin-bottom: 50px; color: #ffcc1d; font-size: 4em;font-family: 'Black Han Sans', sans-serif; position: relative;}
+strong{font-size: 1.2em;}
+.top ul li{padding-right: 20px;}
+
+.panel{display: none;}
+.event {width: 100px;}
+
+.king {position:absolute; left:50%; top:-50px; margin-left:40px;}
+.king img{width: 50px;}
+.top ul li{display: inline-block;}
+
+.tabs img{width: 15px; height: 15px; padding-right: 5px;}
+.tabs {margin-left: 20px;}
+.top1 li{display: inline-block;}
+.top1 li a{ padding-right: 10px;
+     border-radius: 5px; border:1px solid #777;  font-size: 0.9em; padding-top: 5px; 
+    padding-left: 10px; padding-bottom: 5px; text-align: center; margin-right: 20px;   }
+
+.top1 li:hover a{background-color: #ffcc1d; color:#fff;  cursor: pointer; border-color: #ffb600;}
+.top1 li:hover a img{filter:invert(0%) }
+.top1 li > a img{ filter: invert(50%);}
+
+.top1 li .on{background-color: #ffcc1d; color:white; border-color: #ffcc1d; }
+
+.top1 li .on > img{filter: invert(0%);}
+.tabs{margin-top: 50px;}
+.panels img{width: 20%; padding: 10px;}
+.panels a:nth-child(2) img{
+    width:25%;}
+
+
+
+.panel{text-align: center;}
+
+#toggle{
+    display: none;
+}
+
+
+
+@media (max-width:1300px){
+    .inner {width:95%;}
+    .sec1_r {
+        float: right;
+        background-size: contain;
+        width: 50%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+}
+
+.sec2_l {
+    background-size: contain;
+    background-image: url(../images/food3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.font1 {padding-right: 10px; padding-top: 100px;}
+.font {padding-left: 10px; padding-right: 20px;}
+.font h2{font-size: 1.5em;}
+.font p {font-size: 0.8em;}
+.font1 h2{font-size: 1.5em;}
+.font1 p {font-size: 0.8em;}
+.top1 li a{margin: 0px;}
+
+}
+
+
+
+
+
+
+
+@media (max-width: 560px) {
+    .inner{
+        width: 100%;
+    }
+    #toggle{
+        width:20px;
+        height: 20px;
+        position: absolute;
+        top:30px;
+        left: 20px;
+        display: block;
+        cursor: pointer;
+    }
+    .toggle_in{
+        height: 2px;
+        background-color: black;
+        margin-bottom: 6px;
+    }
+    .logo{
+        position: absolute;
+        right:20px;
+        top:20px;
+        padding-top: 0;
+    }
+    .logo img{
+        width: 140px;
+    }
+    header {
+        height: 75px;
+    }
+    .head{
+        z-index: 10000;;
+        position: absolute;
+        top:75px;
+        left: 0;
+        width: 100%;
+        padding-top: 0;
+        height: 0;
+        overflow: hidden;
+
+    }
+    .head .headc{
+        width:25%;
+        display: block;
+        float: left;
+        height: 50px;
+        line-height: 50px;
+        font-size: 13px;
+        border-radius: 0;
+        background-color: #f8f8f8;
+    }
+    .head .headc a{color: #777;}
+    .head .headc:hover {background-color: #ffcc1d;}
+    .head .headc:hover a{color: white;}
+    .head .headc:nth-child(2) a{cursor: pointer;}
+    .head .headc:hover .headd{
+        display: none;
+    }
+    .box1 {
+        height: 530px;
+        background-size:cover;
+    }
+  
+    .box1 {position: relative;}
+    .jm{padding-top: 80px; width: 90%; margin: 0 auto; float: none;}
+    .jm h1{font-size: 1.2em;}
+    .man {width: 35%;
+        float: none;
+       position: absolute;
+       bottom: 10%;
+       right: 0px;
+    }
+    
+
+.sec1 , .sec2{height: auto;}
+
+.sec1_r ,.sec2_l{float: none; width: 95%; margin:0 auto; background-position: bottom center; height: 300px; background-size: contain; }
+    
+.font ,.font1{float: none; padding-top: 50px; width: 80%; padding-left: 0px; padding-right: 0; margin: 0 auto;}
+.font1{padding-bottom: 50px;}
+.font h2, .font1 h2{font-size: 1.7em; font-weight: bold;}
+.box2 hr{ margin: 10px 0 ; border: 1px solid rgb(204, 167, 0);}
+.box2 p br{display: none;}
+.font p, .font1 p{font-size: 1em; line-height: 1.5;}
+
+
+
+
+    .box3{height: 400px;}
+    .box3 h1{margin-top:100px; margin-bottom:30px; font-size: 38px;}
+   .king {margin-left: 20px; top:-30px;}
+   .king img {
+       width: 35px;
+   }
+    .panels img{width: 28%; padding: 0;}
+    .panels a:nth-child(2) img{
+        width:35%;
+    }
+    .top1 li a{margin:0;padding: 5px 7px; font-size: 0.5em;}
+    .tabs img{width: 10px; height: 10px;}
+    .top1 {margin-right: 15px;}
+    .top1 li{
+        height: 31px;
+        margin-bottom:10px;
+    }
+    
+    .tabs {margin-top: 30px;}
+    /* .foot {padding:30px 10px; box-sizing: border-box;}
+    .foot ul li a{font-size: 0.5em; padding-top: 0px;}
+    .foot ul li {padding-right: 20px;}
+    .foot ul .li2 {padding-left: 10px;}
+    .foot1 {padding-left: 5%; }
+    .foot1 p{font-size: 0.1em;}
+    .icon {float: left; padding-left: 5%;}
+    .icon1 {padding: 5px 10px 5px 10px;}
+    .icon2 {padding: 5px 10px 5px 10px;}
+    .icon ul .icon1 {font-size: 1px; border-radius: 5px;}
+    .icon ul .icon2 {font-size: 1px; border-radius: 5px;}
+    .top1 li {margin-right: 10px;}
+    .foot ul li a img{width: 70%;} */
+    .foot1 , .icon {float: none; width: 90%; margin: 0 auto;}
+    .foot {width: 90%; margin: 0 auto;}
+
+
+  
+}
+    
+
+@media (max-width:470px){
+   .foot br{display: block;}
+   .foot ul .li1{border-right: none;}
+   .foot ul .li2{margin-top: 30px; padding-left: 0;}
+   .foot ul li:nth-child(6),.foot ul li:nth-child(7),.foot ul li:nth-child(8){padding-left: 18px;}
+   .foot ul {width: 100%;}
+}

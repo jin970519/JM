@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+    <meta charset="uft-8">
+    <meta http-equiv="x-ua-compatibe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로젝트</title></head>
+    <link href="css/css sub.css" rel="stylesheet" type="text/css">
+    <link href="css/footer.css" rel="stylesheet" type="text/css">
+    <link href="css/header.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+        $(function(){
+
+            $('.tabSet').each(function(){
+                var anchor = $(this).find('.tabs a'); //this=전체 셋트
+                var anchor_on = $(this).find('.tabs a.on');
+                var href_on = anchor_on.attr('href');
+                var panel_all = $(this).find('.panel');
+
+                $(href_on).show(); //처음부터 나와 있을 값
+
+                anchor.each(function(){   // .tabs a 들
+                    var href = $(this).attr('href');
+
+                    $(this).click(function(){ //클릭한 .tabs a
+                        panel_all.hide();
+                        anchor.removeClass('on');
+                        $(this).addClass('on');-
+                        $(href).show();
+
+                    });
+                    });  
+            });
+
+        });
+
+    </script>
+   <body>
+    <header>
+        <div class="inner">
+            <div class="logo"><a href="index.html"><img src="images/header.jpg" alt="logo"></a></div>
+            <div id="toggle">
+                <div class="toggle_in"></div>
+                <div class="toggle_in"></div>
+                <div class="toggle_in"></div>
+          </div>
+            <nav class="head">
+                <ul>
+                    <li class="headc"> <a href="sub.html">회사소개</a></li>
+                    <li class="headc">다운로드
+                        <ul class="headd">
+                            <li><a href="https://play.google.com/store/games?hl=ko&utm_source=apac_med&utm_medium=offdis&utm_content=Oct1221&utm_campaign=Evergreen&pcampaignid=MKT-EDR-apac-kr-1003227-med-offdis-py-Evergreen-Oct1221-Sitelink-NBS:GENGAM:SB:NAVER:0:EVG21Q2%7CDISP_pid_297152116-cid_142312048-aid_490253550&dclid=CJ-vssqSnPUCFQtdvQodUDEAeQ"
+                                    target="blank">안드로이드 전용</a></li>
+                            <li><a href="https://www.apple.com/kr/app-store/" target="blank" target="blank">ISO전용</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="headc"><a href="sub2.html">이벤트</a></li>
+                    <li class="headc"><a href="sub3.html">고객센터</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="sec1">
+        <div class="inner">
+            <h1>회사 소개</h1>
+            <div class="left"><img src="images/girl.png" alt=""></div>
+            <div class="right"><img src="images/win.png" alt="subman"></div>
+        </div>
+    </section>
+    <section class="sec2">
+        <div class="inner">
+
+        </div>
+    </section>
+
+    <section class="sec3">
+        <div class="inner">
+            <div class="menu">
+                <div class="com">
+                    <h2>당신의 맛있는 한끼를 위해</h2>
+                    <h1>전국의 메뉴판</h1>
+                </div>
+                <span class="com_r"><img src="images/jm.png" alt="jm"></span>
+ <hr>
+            </div>   
+   
+      
+            <div class="se">
+               
+                <div class="sec3_left">
+                    <H1>INTRODUCE</H1>
+                    <P>전국의 메뉴판은 2019년도에 설립된 회사입니다. 고객님들의 맛있는 한끼를 위해 노력하고 있습니다.<br>
+                        전국의 최고의 콘텐츠를 자랑하는 전국의 메뉴판은
+                        플렛폼을 통해 전국의 계신 각종 사장님들에게 도움이<br>
+                        되고, 고객님들의 편안한 먹거리 찾기를 위해 다양한
+                        서비스를 제공할 수 있도록 노력 하겠습니다.</P>
+                </div>
+                <div class="sec3_right"><img src="images/back.png" alt=""></div>
+        </div>
+
+        <div class="to">
+            <div class="to_l"><img src="images/family.png" alt=""></div>
+            <div class="to_r" >
+                <h1>TOGETHER. 함께하는기업</h1>
+                <P>(주)전국의 메뉴판은 '원스톱솔루션기업'<br>
+                    을목표로, 새로운 브랜드 가치를 만들어가는데<br>
+                    노력을 기울이고 있습니다. 마케팅,디자인,영상등<br>
+                    다양한 분야에서 역랑을 펼치고 있습니다. 직원과<br>
+                    고객님들의 밝은 웃음을 만든는 회사가 되겠습니다
+                </P>
+            </div>
+        </div>
+    
+        <div class="people">
+            <div class="peo_l">
+                <h1>PEOPLE, 메뉴판 만드는 사람들</h1>
+                <P>(주)전국의 메뉴판은 전국의 4차 산업을
+                    이끄는 지역 <br> 최고의 ICT기업이라고
+                    자부하고있습니다. <br>지역 온라인을 통한 통합적인
+                    정보서비스와 커뮤니티가 <br> 구축이 될수 있도록
+                    개발,설계,서비스,운영에 힘쓰고 있습니다.</P>
+            </div>
+            <div class="peo_r"><img src="images/pe.png" alt=""></div>
+        </div>
+
+
+    </div>  
+</section>
+      
+       <footer>
+        <div class="inner">
+        <nav class="foot">
+        <ul>
+            <li><a hxloref="sub.html">회사소개</a></li>
+            <li><a href="sub2.html">이벤트</a></li>
+            <li class="li1"><a href="sub3.html">고객센터</a></li><br>
+            <li class="li2"><a href="https://www.facebook.com/" target="blank"><img src="images/facebook.png" alt="facebook"></a></li>
+            <li><a href= "https://www.instagram.com/" target="blank"><img src="images/instargram.png" alt="instargram"></a></li>
+            <li><a href="https://www.youtube.com/" target="blank"><img src="images/youtube.png" alt="youtube"></a></li>
+            <li><a href="https://accounts.kakao.com/login/kakaostory" target="blank"><img src="images/kakaostory.png" alt="kakaostory"></a></li>
+         </ul>
+ </nav>
+ <hr>
+ <div class="foot1">
+     <p>(주)전국의 메뉴판</p>
+         <p>주소:부산시 수영구 광안로 231-12 ㅣ 사업자번호:132-84-58455 ㅣ 통신판매업:부산 수영구-0505 </p>
+         <p>TEL: 1588-1588 ㅣFAX : 050-4545-5585 ㅣ MAIL:MENUPAN@Naver.com
+     </p>
+ </div>
+     <nav class="icon">
+     <ul>
+         <li class="icon1"><a href="https://play.google.com/store/games?hl=ko&utm_source=apac_med&utm_medium=offdis&utm_content=Oct1221&utm_campaign=Evergreen&pcampaignid=MKT-EDR-apac-kr-1003227-med-offdis-py-Evergreen-Oct1221-Sitelink-NBS:GENGAM:SB:NAVER:0:EVG21Q2%7CDISP_pid_297152116-cid_142312048-aid_490253550&dclid=CKf5mcKRnPUCFVgmlgodmPsMMw" target="blank"><img src="images/playstore.png" alt="playstore">Google play</a></li>
+         <li class="icon2"><a href="https://www.apple.com/kr/app-store/" target="blank"><img src="images/appstore.png" alt="appstore"> App store</a></li>
+     </ul>
+ </nav>
+ </div>
+    </footer>
+   </body>
+</body>
+  
+  
+  
+  
+  
+ </html>
