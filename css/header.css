@@ -11,7 +11,7 @@ header .inner::before, header .inner::after{clear: both; display: block; content
 
 @media (max-width:1300px){
 .head .headc{width: 77px;}
-.head .headc:hover .headd{width: 100px; font-size: 0.7em;}
+.head .headc:hover .headd{width: 77px; font-size: 0.7em;}
 
 
 @media (max-width: 560px) {

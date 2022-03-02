@@ -47,12 +47,12 @@ header .inner::before, header .inner::after{clear: both; display: block; content
 
 
 
-.top1 li:hover a{background-color: #ffb600; color:white;  cursor: pointer; }
+.top1 li:hover a{background-color: #ffcc1d; color:white;  cursor: pointer; }
 .top1 li a:hover{filter:invert(0%) }
-a.on{background-color: #ffb600; color:white;}
+a.on{background-color: #ffcc1d; color:white;}
 
 
-.tabSet {padding-bottom: 150px;}
+.tabSet {padding-bottom: 150px; margin: 0% auto;}
 
 table{margin: 0 auto; border-collapse: collapse;;}
 tr:nth-child(1){background-color: #f8f8f8; text-align: center;}
@@ -64,8 +64,8 @@ td{height: 50px; border-right: 1px solid #eeeeee; border-bottom: 0.5px solid #ee
 
 .one li{display: inline-block; padding:10px; }
 .one{text-align: center; margin-top: 50px; list-style: none;}
-.one li:nth-child(2){color: #ffb600;}
-.one li:hover{color: #ffb600; cursor: pointer;} 
+.one li:nth-child(2){color: #ffcc1d;}
+.one li:hover{color: #ffcc1d; cursor: pointer;} 
 
 .event img{width: 20.9%; padding-left: 5px;}
 .event a:nth-child(1) img{padding-left: 30px;}
@@ -116,6 +116,9 @@ footer{background-color: #f7f7f7; height: 280px;}
     .inner{width: 100%;}
     .sec1 h1{font-size: 3em; padding-top: 150px;}
     .tabs1{width: 100%;}
+    #panel1-1{margin-left: 10px;}
+    .event{margin: 0 auto; text-align: center;}
+    .event a:nth-child(1) img{padding-left: 0px;}
 }
 
 @media  (max-width: 560px){
@@ -172,7 +175,7 @@ footer{background-color: #f7f7f7; height: 280px;}
         .sec1 {height: 200px;}
         .sec2 {height: 70px;}
         .sec1 h1{font-size: 2em; padding-top: 100px;}
-        .tabs1 {width: 100%; font-size: 0.5em; text-align: center; margin: 30px auto; display: inline-block;}
+        .tabs1 {width: 100%; font-size: 0.7em; text-align: center; margin: 30px auto; display: inline-block;}
         .tabs1 li{text-align: center; list-style: none; display: inline-block ; cursor: pointer; width: 100%;}
 
         .left {width: 100px; padding-left: 50px; transform: translateY(-100px);}
